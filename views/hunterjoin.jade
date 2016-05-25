@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    title= "The Hunt- Hunter Join"
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+	div(id="hunter-join-content")
+		div(id="hunt-explanation")
+			div(id="hunt-location")
+				img(src="/images/bostonmap.png")
+				p(class="addhunterpagetext") Hunters will hunt in the greater Boston area, centered in Cambridge
+			div(id="hunt-time")
+				img(src="/images/clock.png")
+				p(class="addhunterpagetext") Hunt will begin at 10 AM on Hunt Date
+			div(id="hunt-how")
+				img(src="/images/textedclue.png")
+				p(class="addhunterpagetext") You wil receive a text message with the first clue. Decoding the first clue will take you to a second clue and so on. There are 8 clues in total.
+			div(id="hunt-reward")
+				img(src="/images/treasurechest.png")
+				p(class="addhunterpagetext") ...First team to the last clue gets $100
+			div(id="first-clue")
+				img(src="/images/questionmark.png")
+				p(class="addhunterpagetext") Here's a first clue to start thinking about...What's the ship that never sinks?
+		div(id="joinform")
+			p Okay your email is #{email} Submit this other information to be a Hunter
+			form(class="form",id="addhunterpagejoinform")
+				div(id="form-group")
+					label(id="namelabel",for="nameinputform") Hunter Name
+					input(type="text",name="huntername",id="nameinputform")
+				div(id="form-group")
+					label(id="phonenumberlabel",for="(phonenumberinputform") Hunter Phone Number
+					input(type="text",name="phonenumber",id="phonenumber")
+				div(id="money-request")
+				submit(action="post",target="/adduser",id="hunteraddpagesubmitbutton",class="submitbutton")	
+				
+					
+			
+		

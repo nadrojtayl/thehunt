@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= "The Hunt"
+    link(rel='stylesheet', href='/stylesheets/style.css')
+	script(src="/javascripts/countdown.js")
+  body
+	div(id="content")
+		div(id="countdown")
+			p Time until the hunt:
+			div(id="countdowntime")
+			div(id="vertical-divider")
+			div(id="hunt-join")
+				p Join the Hunt
+				form(id="form")
+					input(type="text",id="HunterEmail",name="HunterEmail")
+					submit(action="post",id="frontpagesubmitbutton",target="/hunterjoin",class="submitbutton")
+					
+    
