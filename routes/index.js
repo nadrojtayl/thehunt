@@ -31,17 +31,24 @@ router.post('/adduser',function(req,res,next){
 				throw err;
 			}
 			var query = "INSERT INTO scavhunters VALUES(" + "'" + req.body.huntername + "'" + "," + "'" + req.body.email + "'" + "," + "'" + req.body.phonenumber + "'" + ")";
-			console.log(query);
 			client.query(query,function(err,result){
 				if(err){throw err;}
 				
 				console.log(result);
 			})
 		
-		res.render('thankyou',{huntdate:""});
 		})
 	}
-})
+		
+		pg.connect(postgresdatabaseaddress,function(err,client){
+			if(err){throw err;}
+			var query = "SELECT * from scavhunters";
+			client.query(query,function(err,results){
+				if(err){throw err;}
+				res.render('thankyou',{huntdate:"",users:JSON.stringify(results.rows)});
+			})
+		});
+	})
 
 
 
