@@ -6,3 +6,27 @@ body {
 a {
   color: #00B7FF;
 }
+
+#background{
+	z-index:-1;
+	position:absolute;
+	left:0;
+	top:0;
+	opacity: 0.9;
+}
+
+#frontpagetext{
+	color:white;
+}
+
+#countdown{
+	color:white;
+}
+
+#addhunterpagetext{
+	color:black;
+}
+
+#addpageimage{
+	width:50%;
+}

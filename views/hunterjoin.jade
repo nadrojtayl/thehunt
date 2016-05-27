@@ -1,38 +1,45 @@
 doctype html
 html
-  head
-    title= "The Hunt- Hunter Join"
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-	div(id="hunter-join-content")
-		div(id="hunt-explanation")
-			div(id="hunt-location")
-				img(src="/images/bostonmap.png")
-				p(class="addhunterpagetext") Hunters will hunt in the greater Boston area, centered in Cambridge
-			div(id="hunt-time")
+	head
+		title= "The Hunt- Hunter Join"
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel="icon", href="/images/logo.png")
+		link(rel='stylesheet',href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+	body
+		div(id="hunter-join-content",class="row")
+			div(id="hunt-explanation",class="col-md-6 col-lg-6")
+				div(id="hunt-location")
+					div(id="addpageimageholder")
+						img(src="/images/bostonmap.png",class="img-responsive",id="addpageimage")
+					div(id="addpagetextholder")
+						p(class="addhunterpagetext") Hunters will hunt in the greater Boston area, centered in Cambridge
+					div(id="hunt-time")
 				img(src="/images/clock.png")
 				p(class="addhunterpagetext") Hunt will begin at 10 AM on Hunt Date
-			div(id="hunt-how")
-				img(src="/images/textedclue.png")
-				p(class="addhunterpagetext") You wil receive a text message with the first clue. Decoding the first clue will take you to a second clue and so on. There are 8 clues in total.
-			div(id="hunt-reward")
-				img(src="/images/treasurechest.png")
-				p(class="addhunterpagetext") ...First team to the last clue gets $100
-			div(id="first-clue")
-				img(src="/images/questionmark.png")
-				p(class="addhunterpagetext") Here's a first clue to start thinking about...What's the ship that never sinks?
-		div(id="joinform")
-			p Okay your email is #{email} Submit this other information to be a Hunter
-			form(class="form",id="addhunterpagejoinform")
-				div(id="form-group")
-					label(id="namelabel",for="nameinputform") Hunter Name
-					input(type="text",name="huntername",id="nameinputform")
-				div(id="form-group")
-					label(id="phonenumberlabel",for="(phonenumberinputform") Hunter Phone Number
-					input(type="text",name="phonenumber",id="phonenumber")
+				div(id="hunt-how")
+					img(src="/images/textedclue.png")
+					p(class="addhunterpagetext") You wil receive a text message with the first clue. Decoding the first clue will take you to a second clue and so on. There are 8 clues in total.
+				div(id="hunt-reward")
+					img(src="/images/treasurechest.png")
+					p(class="addhunterpagetext") ...First team to the last clue gets $100
+				div(id="first-clue")
+					img(src="/images/questionmark.png")
+					p(class="addhunterpagetext") Here's a first clue to start thinking about...What's the ship that never sinks?
+			div(id="joinform",class="col-md-4 col-lg-3")
+				p Okay your email is #{email} Submit this other information to be a Hunter
 				div(id="money-request")
-				submit(action="post",target="/adduser",id="hunteraddpagesubmitbutton",class="submitbutton")	
-				
+					form(action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top")
+						input(type="hidden" name="cmd" value="_s-xclick")
+						input(type="hidden" name="hosted_button_id" value="GKGKGFHLKFDEQ")
+						input(type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!")
+						img(alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1")
+				form(class="form",id="addhunterpagejoinform",action="/adduser",method="post")
+					div(id="form-group")
+						label(id="namelabel",for="nameinputform") Hunter Name
+						input(type="text",name="huntername",id="nameinputform")
+					div(id="form-group")
+						label(id="phonenumberlabel",for="(phonenumberinputform") Hunter Phone Number
+						input(type="text",name="phonenumber",id="phonenumber")
+					button(type="submit",action="post",id="frontpagesubmitbutton",class="submitbutton") Join
 					
-			
-		

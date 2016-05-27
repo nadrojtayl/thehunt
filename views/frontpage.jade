@@ -1,19 +1,23 @@
 doctype html
 html
-  head
-    title= "The Hunt"
-    link(rel='stylesheet', href='/stylesheets/style.css')
+	head
+	title= "The Hunt"
+	link(rel='stylesheet', href='/stylesheets/style.css')
 	script(src="/javascripts/countdown.js")
-  body
-	div(id="content")
-		div(id="countdown")
-			p Time until the hunt:
-			div(id="countdowntime")
+	script(src="/javascripts/global.js")
+	link(rel="icon", href="/images/logo.png")
+	body
+		img(id="background",src="/images/starbackground.jpg")
+		div(id="content")
+			div(id="countdownholder")
+				p(id="frontpagetext") Time until the hunt:
+				div(id="countdown")
 			div(id="vertical-divider")
 			div(id="hunt-join")
-				p Join the Hunt
-				form(id="form")
-					input(type="text",id="HunterEmail",name="HunterEmail")
-					submit(action="post",id="frontpagesubmitbutton",target="/hunterjoin",class="submitbutton")
+			p(id="frontpagetext") Join the Hunt
+			form(id="form",action="/hunterjoin",method="post")
+					input(type="text",id="HunterEmail",name="HunterEmail",style="color:#888;", value="HunterEmail", onfocus="inputFocus(this)",onblur="inputBlur(this)")
+					div(id="submitbuttonholder")
+						button(type="submit",action="post",id="frontpagesubmitbutton",class="submitbutton") I want to participate in Boston's greatest scavenger hunt
 					
     

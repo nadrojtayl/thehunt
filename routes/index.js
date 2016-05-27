@@ -4,13 +4,13 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('frontpage', { title: 'Express' });
 });
 
 router.post('/hunterjoin',function(req,res,next){
-	
+	console.log(req.body);
 	//renders page hunterjoin with email user sent
-	res.render('/hunterjoin',{email: req.body.email});
+	res.render('hunterjoin.jade',{email: req.body.HunterEmail});
 });
 
 
@@ -28,11 +28,14 @@ router.post('/adduser',function(req,res,next){
 			}
 			var query = "INSERT INTO hunters VALUES(" + req.body.huntername + "," + req.body.email + "," + req.body.phonenumber +")";
 			client.query(query,function(err,result){
+				if(err){throw err;}
+				
 				console.log(result);
-			}
+			})
 		
-		res.render('/thankyou',{huntdate:});
+		res.render('/thankyou',{huntdate:""});
+		})
 	}
-}
+})
 
 module.exports = router;
