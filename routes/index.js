@@ -8,10 +8,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/hunterjoin',function(req,res,next){
-	if (req.body.HunterEmail)
-	console.log(req.body);
 	//renders page hunterjoin with email user sent
-	res.render('hunterjoin.jade',{email: req.body.HunterEmail});
+		res.render('hunterjoin.jade',{email: req.body.HunterEmail});
+	var emailinput = document.getElementById("HunterEmail")
+	emailinput.appendChild(document.createTextNode("That was not a valid email address"));
+	console.log("Not a valid email address");
 });
 
 
@@ -41,5 +42,8 @@ router.post('/adduser',function(req,res,next){
 		})
 	}
 })
+
+
+
 
 module.exports = router;

@@ -15,9 +15,10 @@ html
 			div(id="vertical-divider")
 			div(id="hunt-join")
 			p(id="frontpagetext") Join the Hunt
-			form(id="form",action="/hunterjoin",method="post")
-					input(type="text",id="HunterEmail",name="HunterEmail",style="color:#888;", value="HunterEmail", onfocus="inputFocus(this)",onblur="inputBlur(this)")
-					div(id="submitbuttonholder")
-						button(type="submit",action="post",id="frontpagesubmitbutton",class="submitbutton") I want to participate in Boston's greatest scavenger hunt
+			form(id="form",action="/hunterjoin",method="post",onsubmit="return formvalidation()")
+				input(type="text",id="HunterEmail",name="HunterEmail",style="color:#888;", value="HunterEmail", onfocus="inputFocus(this)",onblur="inputBlur(this)")
+				p(id="errormessageholder")
+				div(id="submitbuttonholder")
+					button(type="submit",action="post",id="frontpagesubmitbutton",class="submitbutton") I want to participate in Boston's greatest scavenger hunt
 					
     
