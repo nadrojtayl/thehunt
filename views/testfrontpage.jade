@@ -1,0 +1,56 @@
+html
+	head
+		title= "The Hunt"
+		script(src="/javascripts/countdown.js")
+		script(src="/javascripts/global.js")
+		link(rel="icon", href="/images/logo.png")
+		script(src="https://code.jquery.com/jquery-1.12.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous")
+		link(rel='stylesheet',href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		nav(class="navbar navbar-default",role="navigation",id="titlebar")
+			div(class="container-fluid")
+				div(class="navbar-header") 
+					a(class="navbar-brand") The Hunt: Paid Scavenger Hunt in Boston
+				ul(class="nav navbar-nav pull-right")
+					li(class="active")
+						a(href="#") What is this?
+					li(class="active")
+						a(href="#") Away
+		div(class="jumbotron container-fluid row", id="frontpagejumbotron")
+				div(class="col-sm-3 text-center")
+					div(class="row frontpageimageholder")
+						div(id="frontpageimageholder",class="container col-sm-6 frontpagediv")
+							img(src="/images/clue.png",class="frontpageimage img-responsive")
+						div(id="frontpagetextholder", class="col-sm-6 frontpageimagetextholder")
+							p(class="jumbotrontext pull-left") Receive a clue on your phone on date
+				div(class="col-sm-3 text-center")
+					div(class="row")
+						div(id="frontpageimageholder",class="container col-sm-6")
+							img(src="/images/bostonmap.png", class="frontpageimage")
+						div(id="frontpageimageholder",class="container col-sm-6")
+							p(class="jumbotrontext") Advance from clue to clue around Boston
+				div(class="col-sm-3 text-center")
+					div(id="frontpageimageholder",class="container col-sm-6")
+						img(src="/images/key.png", class="frontpageimage")
+					div(id="frontpageimageholder",class="container col-sm-6")
+						p(class="jumbotrontext") The last clue will lead you to a key
+				div(class="col-sm-3 text-center")
+					div(id="frontpageimageholder",class="container col-sm-6")
+						img(src="/images/treasure2.jpg", class="frontpageimage")
+					div(id="frontpageimageholder",class="container col-sm-6")
+						p(class="jumbotrontext") Return the key to win $100
+		div(class="container-fluid text-center pagination-centered nomarginrow" id="content")
+			div(id="countdownholder" class="row")
+				p(id="frontpagetext") Time until the next hunt:
+				div(id="countdown")
+			div(id="hunt-join")
+				p(id="frontpagetext") Sign up to participate
+				form(id="form",action="/hunterjoin",method="post",onsubmit="return formvalidation()")
+					input(type="text",id="HunterEmail",name="HunterEmail",style="color:#888;", value="HunterEmail", onfocus="inputFocus(this)",onblur="inputBlur(this)")
+					p(id="errormessageholder")
+					div(id="submitbuttonholder")
+						button(type="submit",action="post",id="frontpagesubmitbutton",class="submitbutton") I want to participate
+			
+					

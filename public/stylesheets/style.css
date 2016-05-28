@@ -14,7 +14,7 @@ a {
 	opacity: 0.9;
 }
 
-html{
+body{
    background: url('/images/starbackground.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -63,9 +63,73 @@ html{
 }
 
 #content{
-	background-color: black;
 }
 
 #frontpagetestimonialbar{
-	background-color: pink;
+	background-color: blue;
+	height:15%;
+	overflow:hidden;
+}
+
+#testimonials{
+	background-color:pink;
+}
+
+.nomarginrow{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+.navbar {
+    margin-bottom: 0 !important;
+}
+
+
+#frontpagejumbotron{
+	height:20%;
+	margin-top: 0;
+	margin-bottom:0;
+	text-align: middle;
+}
+
+.frontpageimage{
+	height: 150%;
+    max-width: 100%;
+	margin-right:0px;
+	float: right;
+	display:inline-block;
+    vertical-align:middle;
+}
+
+#frontpageimageholder{
+	height:100%;
+	margin-right:0px;
+	display:inline-block;
+    vertical-align:middle;
+}
+#frontpageimagetextholder{
+	height:100%;
+	margin-right:0px;
+	display:inline-block;
+    vertical-align:middle;
+height: 430px; 
+    line-height: 400px;
+}
+.frontpagetext{
+	float: left;
+	display:inline-block;
+    vertical-align:middle;
+}
+
+.frontpagecolumn{
+	display:inline-block;
+    vertical-align:middle;
+}
+
+.frontpagediv{
+	display:table-cell;
+}
+
+.jumbotrontext{
+	font-size: 10%;
 }

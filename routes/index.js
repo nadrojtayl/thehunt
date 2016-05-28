@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('frontpage', { title: 'Express' });
+  res.render('testfrontpage', { title: 'Express' });
 });
 
 router.get('/faq', function(req, res, next) {
@@ -17,6 +17,10 @@ router.post('/hunterjoin',function(req,res,next){
 	var emailinput = document.getElementById("HunterEmail")
 	emailinput.appendChild(document.createTextNode("That was not a valid email address"));
 	console.log("Not a valid email address");
+});
+
+router.get('/testfrontpage',function(req,res,next){
+	res.render('testfrontpage');
 });
 
 

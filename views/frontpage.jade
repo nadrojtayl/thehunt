@@ -9,13 +9,16 @@ html
 		script(src="https://code.jquery.com/jquery-1.12.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous")
 		link(rel='stylesheet',href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
-		nav(class="navbar navbar-default navbar-fixed-top".role="navigation",id="titlebar",class="row")
-			h1(id="titlebartitle",class="col-md-6 col-lg-6") The Hunt: Paid Scavenger Hunt in Boston
-			a(href="faq",id="navbarlink",class="col-md-6 col-lg-6") This is a navbar
-		div(id="frontpagetestimonialbar",class="row")
-			p Most fun ever
 	body
-		div(id="content",class="text-center pagination-centered")
+		nav(class="container-fluid navbar navbar-default".role="navigation",id="titlebar")
+			div(class="container-fluid")
+				div(class="navbar-header")
+					h1(id="titlebartitle",class="col-md-6 col-lg-6") The Hunt: Paid Scavenger Hunt in Boston
+				div(class="nav navbar-nav")
+					a(href="faq",id="navbarlink",class="col-md-6 col-lg-6") This is a navbar
+		div(id="frontpagetestimonialbar",class="container-fluid jumbotron nomarginrow")
+			p(id="testimonials") Most fun ever
+		div(id="content",class="text-center pagination-centered nomarginrow")
 			div(id="countdownholder")
 				p(id="frontpagetext") Time until the next hunt:
 				div(id="countdown")
