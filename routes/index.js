@@ -7,6 +7,10 @@ router.get('/', function(req, res, next) {
   res.render('frontpage', { title: 'Express' });
 });
 
+router.get('/faq', function(req, res, next) {
+  res.render('faq', { title: 'Express' });
+});
+
 router.post('/hunterjoin',function(req,res,next){
 	//renders page hunterjoin with email user sent
 		res.render('hunterjoin.jade',{email: req.body.HunterEmail});
