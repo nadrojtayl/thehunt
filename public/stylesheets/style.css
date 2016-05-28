@@ -63,6 +63,7 @@ body{
 }
 
 #content{
+	vertical-align:middle;
 }
 
 #frontpagetestimonialbar{
@@ -90,6 +91,7 @@ body{
 	margin-top: 0;
 	margin-bottom:0;
 	text-align: middle;
+	font-size: 12px;
 }
 
 .frontpageimage{
@@ -132,4 +134,13 @@ height: 430px;
 
 .jumbotrontext{
 	font-size: 10%;
+	vertical-align:middle;
+}
+
+.vertical-divider{
+	height: 23%;
+}
+
+#countdown{
+	color: pink;
 }

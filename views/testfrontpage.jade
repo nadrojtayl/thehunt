@@ -24,29 +24,29 @@ html
 						div(id="frontpageimageholder",class="container col-sm-6 frontpagediv")
 							img(src="/images/clue.png",class="frontpageimage img-responsive")
 						div(id="frontpagetextholder", class="col-sm-6 frontpageimagetextholder")
-							p(class="jumbotrontext pull-left") Receive a clue on your phone on date
+							p(class="jumbotrontext pull-left") Receive a clue on your phone on July 15th
 				div(class="col-sm-3 text-center")
 					div(class="row")
 						div(id="frontpageimageholder",class="container col-sm-6")
 							img(src="/images/bostonmap.png", class="frontpageimage")
 						div(id="frontpageimageholder",class="container col-sm-6")
-							p(class="jumbotrontext") Advance from clue to clue around Boston
+							p(class="jumbotrontext") Follow the clues around Boston
 				div(class="col-sm-3 text-center")
 					div(id="frontpageimageholder",class="container col-sm-6")
 						img(src="/images/key.png", class="frontpageimage")
 					div(id="frontpageimageholder",class="container col-sm-6")
-						p(class="jumbotrontext") The last clue will lead you to a key
+						p(class="jumbotrontext") Find a key with the last clue
 				div(class="col-sm-3 text-center")
 					div(id="frontpageimageholder",class="container col-sm-6")
 						img(src="/images/treasure2.jpg", class="frontpageimage")
 					div(id="frontpageimageholder",class="container col-sm-6")
 						p(class="jumbotrontext") Return the key to win $100
+		div(class="vertical-divider row")
 		div(class="container-fluid text-center pagination-centered nomarginrow" id="content")
 			div(id="countdownholder" class="row")
-				p(id="frontpagetext") Time until the next hunt:
-				div(id="countdown")
+				p(id="frontpagetext" class="lead") Time until the next hunt on July 15th:
+				div(id="countdown", class="lead")
 			div(id="hunt-join")
-				p(id="frontpagetext") Sign up to participate
 				form(id="form",action="/hunterjoin",method="post",onsubmit="return formvalidation()")
 					input(type="text",id="HunterEmail",name="HunterEmail",style="color:#888;", value="HunterEmail", onfocus="inputFocus(this)",onblur="inputBlur(this)")
 					p(id="errormessageholder")
