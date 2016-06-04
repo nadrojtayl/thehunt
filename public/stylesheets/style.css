@@ -75,12 +75,19 @@ body{
 
 .navbar {
     margin-bottom: 0 !important;
+	background-color: #18121E;
+	color: #984B43;
 }
+
+
 
 
 #frontpagejumbotron{
 	width: 100%;
 	height: 25%;
+	background-color: #233237;
+	color: #EAC67A;
+	font-size:1em;
 }
 
 #frontpageimage{
@@ -92,6 +99,7 @@ body{
   display:inline-block;
   border: 1px solid black;
   float:right;
+  background: white;
 }
 
 #frontpageimageholder{
@@ -142,6 +150,7 @@ height: 430px;
 
 .headertext{
 	font-size: 32px;
+	color: #984B43;
 }
 
 #frontpagetext{
@@ -156,7 +165,6 @@ height: 430px;
 
 #jumbotext{
 	height:10em;
-	border:1px;
 }
 
 #vcenter{
@@ -175,4 +183,21 @@ height: 430px;
 
 .customnav{
 	width:100%;
+}
+
+.navbar-brand{
+	color: #984B43;
+}
+
+#headertext{
+	color: #984B43;
+}
+
+#navlink{
+	color: #984B43;
+	background-color: #18121E;
+}
+
+#jumbotext{
+	font-size: 1.3em;
 }
