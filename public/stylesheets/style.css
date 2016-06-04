@@ -89,22 +89,20 @@ body{
 	background-color: #233237;
 	color: #EAC67A;
 	font-size:1em;
-		padding-top: 0 !important;
-	padding-bottom: 0 !important;
-	margin-bottom: 0 !important;
+	padding-bottom: 0;
+	margin-bottom:0;
 }
 
 #frontpageimage{
-	  margin: 0 auto;
-  display:block;
 }
 
 .frontpageimage{ 
   max-height:60%;
+  margin:auto;
+  display:inline-block;
   border: 1px solid black;
+  float:right;
   background: white;
-  display:block;
-  margin: 0 auto !important;
 }
 
 #frontpageimageholder{
