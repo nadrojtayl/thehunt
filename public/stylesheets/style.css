@@ -68,15 +68,16 @@ body{
 	background-color:pink;
 }
 
-.nomarginrow{
-	margin-top:0px;
-	margin-bottom:0px;
-}
 
 .navbar {
     margin-bottom: 0 !important;
 	background-color: #18121E;
 	color: #984B43;
+	width:100% !important;
+}
+
+.navbar-inner{
+	width:100% !important;
 }
 
 
@@ -88,18 +89,22 @@ body{
 	background-color: #233237;
 	color: #EAC67A;
 	font-size:1em;
+		padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important;
 }
 
 #frontpageimage{
+	  margin: 0 auto;
+  display:block;
 }
 
 .frontpageimage{ 
-  max-height:100%;
-  margin:auto;
-  display:inline-block;
+  max-height:60%;
   border: 1px solid black;
-  float:right;
   background: white;
+  display:block;
+  margin: 0 auto !important;
 }
 
 #frontpageimageholder{
@@ -141,7 +146,7 @@ height: 430px;
 }
 
 #countdown{
-	color: pink;
+	color: #EAC67A;
 }
 
 #hunter-join-content{
@@ -159,7 +164,7 @@ height: 430px;
 }
 
 #frontpagecountdowntext{
-	color:white;
+	color: #984B43;
 }
 
 
@@ -200,4 +205,18 @@ height: 430px;
 
 #jumbotext{
 	font-size: 1.3em;
+}
+
+#bigfrontpageimage{
+	margin-bottom: 0 !important;
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	width:100%;
+	height:30%;
+}
+
+#bannerimage{
+	height:100%;
+	width:102%;
 }
