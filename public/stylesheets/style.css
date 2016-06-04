@@ -1,29 +1,21 @@
-body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+
 
 a {
   color: #00B7FF;
 }
 
-#background{
-	z-index:-1;
-	position:absolute;
-	left:0;
-	top:0;
-	opacity: 0.9;
-}
+
 
 body{
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
    background: url('/images/starbackground.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+   margin: 0px;
+    width: 100%;
 }
 
-#frontpagetext{
-	color:white;
-}
 
 #countdown{
 	color:white;
@@ -87,24 +79,23 @@ body{
 
 
 #frontpagejumbotron{
-	height:20%;
-	margin-top: 0;
-	margin-bottom:0;
-	text-align: middle;
-	font-size: 12px;
+	width: 100%;
+	height: 25%;
 }
 
-.frontpageimage{
-	height: 150%;
-    max-width: 100%;
-	margin-right:0px;
-	float: right;
-	display:inline-block;
-    vertical-align:middle;
+#frontpageimage{
+}
+
+.frontpageimage{ 
+  max-height:100%;
+  margin:auto;
+  display:inline-block;
+  border: 1px solid black;
+  float:right;
 }
 
 #frontpageimageholder{
-	height:100%;
+	height:10%;
 	margin-right:0px;
 	display:inline-block;
     vertical-align:middle;
@@ -143,4 +134,45 @@ height: 430px;
 
 #countdown{
 	color: pink;
+}
+
+#hunter-join-content{
+	background:white;
+}
+
+.headertext{
+	font-size: 32px;
+}
+
+#frontpagetext{
+	color:black;
+	font-size: 16px;
+}
+
+#frontpagecountdowntext{
+	color:white;
+}
+
+
+#jumbotext{
+	height:10em;
+	border:1px;
+}
+
+#vcenter{
+	display:table-cell;
+	vertical-align:middle;
+	table-layout: fixed;
+	margin-top:0%;
+}
+
+#centeredtext{
+	display:table-cell;
+	vertical-align:middle;
+	table-layout: fixed;
+	margin-top:20%;
+}
+
+.customnav{
+	width:100%;
 }
