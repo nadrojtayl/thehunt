@@ -56,6 +56,7 @@ body{
 
 #content{
 	vertical-align:middle;
+	padding-top:3%;
 }
 
 #frontpagetestimonialbar{
@@ -84,13 +85,14 @@ body{
 
 
 #frontpagejumbotron{
-	width: 100%;
+	width: 101%;
 	height: 25%;
 	background-color: #233237;
 	color: #EAC67A;
 	font-size:1em;
 	padding-bottom: 0;
 	margin-bottom:0;
+
 }
 
 #frontpageimage{
@@ -217,4 +219,10 @@ height: 430px;
 #bannerimage{
 	height:100%;
 	width:102%;
+}
+
+#image-text{
+	color: red;
+	z-index:-1;
+	position:relative;
 }
