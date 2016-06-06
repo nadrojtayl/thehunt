@@ -12,14 +12,20 @@ html
 		nav(class="navbar navbar-static-top container-fluid",role="navigation",id="titlebar")
 			div(class="navbar-inner container-fluid")
 				div(class="navbar-header") 
-					a(class="navbar-brand headertext", id="headertext") The Hunt: Paid Scavenger Hunt in Boston
+					a(class="navbar-brand headertext", id="headertext") The Hunt
 				ul(class="nav navbar-nav pull-right")
 					li(class="active")
-						a(href="#",id="navlink") What is this?
+						a(href="#",id="navlink") FAQ
 					li(class="active")
 						a(href="#",id="navlink") Sponsorship/Media
-		div(class="jumbotron container-fluid row", id="bigfrontpageimage")
-			img(src="/images/cambridge.jpg",id="bannerimage")
+					li(class="active")
+						a(href="#",id="navlink") Contact Us
+		div(class="jumbotron container-fluid row secondjumbo", id="bigfrontpageimage")
+			div(id="explanatorytext")
+				h1(class="frontheading",id="frontheading") Cash Reward Scavenger Hunt
+				b(id="smallheadingtext") The Hunt is an exhilarating, paid scavenger hunt taking place every few months in Boston, USA. When you sign up, you receive a clue via email on Hunt-Day, which is in July. You (and your friends!) will decipher that clue, which will lead you to the next clue, and then the next clue, all taking place under two hours. The first Bostonian to the last clue wins a $100 prize. 
+				
+				b(id="smallheadingtext",class="greentext") The Hunt is a great time, and only costs $2.
 		div(class="jumbotron container-fluid row", id="frontpagejumbotron")
 				div(class="col-sm-3 text-center",style="height: 100%;")
 					div(class="row")
@@ -51,7 +57,7 @@ html
 				div(id="countdown", class="lead")
 			div(id="hunt-join")
 				form(id="form",action="/hunterjoin",method="post",onsubmit="return formvalidation()")
-					input(type="text",id="HunterEmail",name="HunterEmail",style="color:#888;", value="HunterEmail", onfocus="inputFocus(this)",onblur="inputBlur(this)")
+					input(type="text",id="HunterEmail",name="HunterEmail",style="color:#888;", value="Enter your email", onfocus="inputFocus(this)",onblur="inputBlur(this)")
 					p(id="errormessageholder")
 					div(id="submitbuttonholder")
 						button(type="submit",action="post",id="frontpagesubmitbutton",class="submitbutton") I want to participate

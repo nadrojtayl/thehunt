@@ -1,19 +1,14 @@
 
+@import url(//fonts.googleapis.com/css?family=Raleway);
 
 a {
-  color: #00B7FF;
+	color:black;
 }
 
 
 
 body{
-	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-   background: url('/images/starbackground.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-   margin: 0px;
-    width: 100%;
+	font: 14px "Raleway", Helvetica, Arial, sans-serif;
 }
 
 
@@ -72,9 +67,10 @@ body{
 
 .navbar {
     margin-bottom: 0 !important;
-	background-color: #18121E;
-	color: #984B43;
 	width:100% !important;
+	height: 10%;
+	padding-bottom:0px;
+	text-align:middle;
 }
 
 .navbar-inner{
@@ -87,8 +83,6 @@ body{
 #frontpagejumbotron{
 	width: 101%;
 	height: 25%;
-	background-color: #233237;
-	color: #EAC67A;
 	font-size:1em;
 	padding-bottom: 0;
 	margin-bottom:0;
@@ -155,11 +149,9 @@ height: 430px;
 
 .headertext{
 	font-size: 32px;
-	color: #984B43;
 }
 
 #frontpagetext{
-	color:black;
 	font-size: 16px;
 }
 
@@ -191,17 +183,9 @@ height: 430px;
 }
 
 .navbar-brand{
-	color: #984B43;
 }
 
-#headertext{
-	color: #984B43;
-}
 
-#navlink{
-	color: #984B43;
-	background-color: #18121E;
-}
 
 #jumbotext{
 	font-size: 1.3em;
@@ -212,8 +196,11 @@ height: 430px;
 	margin-top: 0 !important;
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
-	width:100%;
-	height:30%;
+	width:101%;
+	height:35%;
+	text-align:center;
+	 margin: 0 auto;
+	 position:relative;
 }
 
 #bannerimage{
@@ -225,4 +212,27 @@ height: 430px;
 	color: red;
 	z-index:-1;
 	position:relative;
+}
+
+#bigfrontpageimage{
+  background: url("/images/background.png");
+}
+
+#frontheading{
+	font-size: 2.8em !important;
+}
+
+#smallheadingtext{
+	font-size: 1.4em;
+}
+
+#explanatorytext{
+	width:60%;
+	text-align:center;
+	position:relative;
+	left:20%;
+}
+
+.greentext{
+	color:green;
 }
