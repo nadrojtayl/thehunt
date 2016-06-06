@@ -216,6 +216,7 @@ height: 430px;
 
 #bigfrontpageimage{
   background: url("/images/background.png");
+  width:100%;
 }
 
 #frontheading{
