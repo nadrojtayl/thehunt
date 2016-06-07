@@ -58,10 +58,12 @@ html
 						div(id="countdown", class="lead")
 					div(class="col-sm-4")
 						p(id="frontpagecountdowntext" class="lead") Number of hunters signed up
-						div(id="countdown", class="lead")
+						div(id="numberhunters",class="lead")
+							p 52
 					div(class="col-sm-4")
 						p(id="frontpagecountdowntext" class="lead") Cash prize
-						div(id="countdown", class="lead")
+						div(id="prizeamount", class="lead")
+							p $100
 		div(id="hunt-join")
 			form(id="form",action="/hunterjoin",method="post",onsubmit="return formvalidation()")
 				input(type="text",id="HunterEmail",name="HunterEmail",style="color:#888;", value="Enter your email", onfocus="inputFocus(this)",onblur="inputBlur(this)")
