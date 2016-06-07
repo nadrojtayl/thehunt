@@ -49,6 +49,7 @@ body{
 #content{
 	vertical-align:middle;
 	padding-top:3%;
+    border-bottom: thin dotted #DCDCDC;
 }
 
 #frontpagetestimonialbar{
@@ -187,7 +188,7 @@ height: 430px;
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
 	width:101%;
-	height:35%;
+	height:39%;
 	text-align:center;
 	 margin: 0 auto;
 	 position:relative;
@@ -230,4 +231,15 @@ height: 430px;
 
 #jumbotext{
 	color:green;
+}
+
+#frontpagecountdowntext{
+	text-align:center;
+}
+
+#hunt-join{
+	padding-top:2%;
+	width:20%;
+	position: relative;
+	left: 40%;
 }

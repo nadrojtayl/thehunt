@@ -23,9 +23,11 @@ html
 		div(class="jumbotron container-fluid row secondjumbo", id="bigfrontpageimage")
 			div(id="explanatorytext")
 				h1(class="frontheading",id="frontheading") Super fun paid scavenger hunt 
-				b(id="smallheadingtext") The Hunt is an exhilarating, paid scavenger hunt that pits participants from the same city against each other in a battle of wits with money on the line. Each participant pays $2, and the winner of the Hunt gets $100 or 25% of the money paid in. When you sign up, you receive a clue via email on a certain date. You (and your friends!) will decipher that clue, which will lead you to the next clue, and then the next clue, all taking place under two hours. The Hunt happens every few months. The next hunt is on #{date}. 
-				
-				b(id="smallheadingtext",class="greentext") The Hunt is a great time, and only costs $2.
+				b(id="smallheadingtext") The Hunt is an exhilarating, paid scavenger hunt that pits participants from the same city against each other in a battle of wits. Each participant pays $2, and the winner of the Hunt gets $100 or 25% of the money paid in. When you sign up, you receive a clue via email on a certain date. You (and your friends!) will decipher that clue, which will lead you to the next clue, and then the next clue, all taking place under two hours. The Hunt happens every few months. 
+				br
+				br
+				b(id="smallheadingtext") The next hunt is on 
+				b(id="smallheadingtext",class="datetext") #{date}. 
 		div(class="jumbotron container-fluid row", id="frontpagejumbotron")
 				div(class="col-sm-3 text-center",style="height: 100%;")
 					div(class="row")
@@ -61,7 +63,7 @@ html
 						div(id="numberhunters",class="lead")
 							p 52
 					div(class="col-sm-4")
-						p(id="frontpagecountdowntext" class="lead") Cash prize
+						p(id="frontpagecountdowntext" class="lead") Current prize amount
 						div(id="prizeamount", class="lead")
 							p $100
 		div(id="hunt-join")
