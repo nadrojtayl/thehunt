@@ -1,6 +1,6 @@
 //calculates time to 
 
-var end = new Date('06/12/2016 10:1 AM');
+var end = new Date('07/16/2016 10:1 AM');
 
     var _second = 1000;
     var _minute = _second * 60;
