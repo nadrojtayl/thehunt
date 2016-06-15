@@ -81,8 +81,9 @@ body{
 	width: 101%;
 	height: 25%;
 	font-size:1em;
-	padding-bottom: 0;
-	margin-bottom:0;
+	padding-bottom: 0%;
+	padding-top: 3%;
+	margin-bottom:0%;
 
 }
 
@@ -179,7 +180,7 @@ height: 430px;
 
 
 #jumbotext{
-	font-size: 1.3em;
+	font-size: 1.0em;
 }
 
 #bigfrontpageimage{
@@ -188,7 +189,7 @@ height: 430px;
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
 	width:101%;
-	height:40%;
+	height:46%;
 	text-align:center;
 	 margin: 0 auto;
 	 position:relative;
