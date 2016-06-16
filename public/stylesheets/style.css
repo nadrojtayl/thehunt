@@ -37,6 +37,7 @@ body{
 #hunt-explanation{
 	border-style: solid;
     border-width: 5px;
+	background-color: #B82F2F;
 }
 
 #titlebar{
@@ -109,6 +110,13 @@ body{
 }
 
 .text-center{
+}
+
+#joinform{
+	border-style: solid;
+    border-width: 5px;
+	border-color:green;
+	background-color:#21D583;
 }
 
 #helper{
