@@ -93,6 +93,7 @@ body{
 	padding-bottom: 0%;
 	padding-top: 0%;
 	margin-bottom:0%;
+	background: #76e2a3;
 
 }
 
@@ -253,7 +254,7 @@ body{
 }
 
 #bigfrontpageimage{
-  background: url("/images/background.png");
+  background: #e74c3c;
   width:100%;
 }
 
@@ -282,6 +283,7 @@ body{
 
 #frontpagecountdowntext{
 	text-align:center;
+	margin-bottom:0;
 }
 
 #hunt-join{
