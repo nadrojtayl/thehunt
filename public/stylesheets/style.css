@@ -47,9 +47,17 @@ body{
 }
 
 #content{
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top:0;
 	vertical-align:middle;
-	padding-top:3%;
+	padding-top:0;
     border-bottom: thin dotted #DCDCDC;
+}
+
+#countdownholder{
+	margin-top:0;
+	padding-top:0;
 }
 
 #frontpagetestimonialbar{
@@ -82,21 +90,37 @@ body{
 	height: 25%;
 	font-size:1em;
 	padding-bottom: 0%;
-	padding-top: 3%;
+	padding-top: 0%;
 	margin-bottom:0%;
 
 }
 
-#frontpageimage{
+#hunteremail,#frontpagesubmitbutton{
+	display:block;
+	margin: 0 auto;
 }
 
+.green{
+	color: green;
+	font-size: 1.7em;
+}
 .frontpageimage{ 
   max-height:60%;
-  margin:auto;
-  display:inline-block;
-  border: 1px solid black;
-  float:right;
-  background: white;
+}
+
+.text-center{
+}
+
+#helper{
+	    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#helper2{
+	height:20%;
+	padding-bottom:0;
+	margin-bottom:0;
 }
 
 #frontpageimageholder{
@@ -110,7 +134,7 @@ body{
 	margin-right:0px;
 	display:inline-block;
     vertical-align:middle;
-height: 430px; 
+	height: 430px; 
     line-height: 400px;
 }
 .frontpagetext{
@@ -153,7 +177,9 @@ height: 430px;
 
 
 #jumbotext{
-	height:10em;
+	display: inline-block;
+  vertical-align: middle;
+  line-height: normal;     
 }
 
 #vcenter{
@@ -161,6 +187,18 @@ height: 430px;
 	vertical-align:middle;
 	table-layout: fixed;
 	margin-top:0%;
+}
+
+#jumbotextholder{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal; 
+}
+
+#textbuffer{
+	height:28%;
+	padding-bottom:0;
+	margin-bottom:0;
 }
 
 #centeredtext{
@@ -189,7 +227,7 @@ height: 430px;
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
 	width:101%;
-	height:46%;
+	height:38%;
 	text-align:center;
 	 margin: 0 auto;
 	 position:relative;
