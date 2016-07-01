@@ -24,7 +24,11 @@ body{
 
 
 #errormessageholder{
-	color:white;
+	color:black;
+}
+
+li{
+	font-size: 14px;
 }
 
 #navbarlink{

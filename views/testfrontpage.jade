@@ -4,7 +4,7 @@ html
 		script(src="/javascripts/countdown.js")
 		script(src="/javascripts/global.js")
 		link(rel="icon", href="/images/logo.png")
-		script(src="https://code.jquery.com/jquery-1.12.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous")
+		script(src="https://code.jquery.com/jquery-1.1p.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous")
 		link(rel='stylesheet',href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
 		link(rel='stylesheet', href='/stylesheets/style.css')
@@ -15,11 +15,11 @@ html
 					a(class="navbar-brand headertext", id="headertext") The Hunt: Boston
 				ul(class="nav navbar-nav pull-right")
 					li(class="active")
-						a(href="#",id="navlink") FAQ
 		div(class="jumbotron container-fluid row secondjumbo", id="bigfrontpageimage")
 			div(id="explanatorytext")
-				h1(class="frontheading",id="frontheading") Paid scavenger hunt in Boston
-				b(id="smallheadingtext") The Hunt is an paid scavenger hunt that pits participants from the same city against each other in a battle of wits. Participants or teams of participants sign up and pay $2. On hunt day, the winning teams gets prize of $100 or 25% of the money paid in. and is featured on a billboard in Boston.
+				h1(class="frontheading",id="frontheading") Boston's only paid scavenger hunt
+				b(id="smallheadingtext") The Hunt is a paid scavenger hunt pitting participants against each other in a battle of wits. Participants or teams sign up and pay $2. On hunt day, we send you a text message with the first clue. You have two hours to follow the clues to the ultimate prize.
+				b(id="smallheadingtext")  The winning teams gets $100 or 25% of the money paid in and their faces on a billboard in Boston.
 				br
 				br
 				b(id="smallheadingtext") The next hunt is on 
@@ -41,7 +41,7 @@ html
 							img(src="/images/moneyup.png",class="frontpageimage",id="frontpageimage")
 						div(class="col-sm-6 text-center",style="height: 100%;")
 							p(class="textbuffer",id="textbuffer")
-							i(id="jumbotext") Pay $2 and watch the money in the pot go up
+							i(id="jumbotext") If enough people sign up, we'll email asking for $2 and call the hunt on!
 				div(class="col-sm-3 text-center")
 					div(class="row")
 						div(class="col-sm-6 text-center",style="height: 100%;")
@@ -49,7 +49,7 @@ html
 							img(src="/images/clue.png",class="frontpageimage",id="frontpageimage")
 						div(class="col-sm-6 text-center",style="height: 100%;",id = "jumbotextholder")
 							p(class="textbuffer",id="textbuffer")
-							i(id="jumbotext") Receive a clue via text on Hunt Day (#{date})
+							i(id="jumbotext") You'll receive the first clue via text on Hunt Day (#{date})
 				div(class="col-sm-3 text-center")
 					div(class="row")
 						div(class="col-sm-6 text-center",style="height: 100%;")
@@ -57,7 +57,7 @@ html
 							img(src="/images/treasure.png",class="frontpageimage",id="frontpageimage")
 						div(class="col-sm-6 text-center",style="height: 100%;")
 							p(class="textbuffer",id="textbuffer")
-							i(id="jumbotext") Follow the clues around Boston, until someone finds the final clue 
+							i(id="jumbotext") Follow the clues around Boston to the prize
 		div(class="container-fluid text-center pagination-centered nomarginrow" id="content")
 				div(id="countdownholder" class="row")
 					div(class="col-sm-4")
