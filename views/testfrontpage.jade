@@ -18,9 +18,11 @@ html
 				ul(class="nav navbar-nav pull-right")
 					li(class="active")
 		div(class="jumbotron container-fluid row secondjumbo", id="bigfrontpageimage")
+			div(id="padding")
+			img(src="/images/huntersheroshot.jpg" id= "heroshot")
 			div(id="explanatorytext")
 				h1(class="frontheading",id="frontheading") Fun, battle-royale scavenger hunt
-				b(id="smallheadingtext") The Hunt is a paid scavenger in Boston hunt for those who love puzzles. On hunt day, youll have two hours to follow the clues to the ultimate prize. 
+				b(id="smallheadingtext") A paid scavenger hunt in Boston for those who love puzzles. On hunt day, youll have two hours to follow the clues to the prize. 
 				br
 				br
 				b(id="smallheadingtext") Sign up and we'll send you the first clue via text on July 16th. Participants or teams pay $2.
@@ -47,24 +49,4 @@ html
 						p(id="frontpagecountdowntext" class="lead") Current prize amount
 						div(id="prizeamount", class="green")
 							p $100
-		div(class="jumbotron container-fluid row", id="frontpagejumbotron")
-				div(class="col-sm-3 text-center")
-						img(src="/images/login.png",class="frontpageimage",id="frontpageimage")
-						i(id="jumbotext") Sign up for the Hunt in your city by entering an email below
-				div(class="col-sm-3 text-center")
-						img(src="/images/moneyup.png",class="frontpageimage",id="frontpageimage")
-						i(id="jumbotext") If enough people sign up, we'll email asking for $2 and call the hunt on!
-				div(class="col-sm-3 text-center")
-						img(src="/images/clue.png",class="frontpageimage",id="frontpageimage")
-						i(id="jumbotext") You'll receive the first clue via text on Hunt Day (#{date})
-				div(class="col-sm-3 text-center")
-						img(src="/images/treasure.png",class="frontpageimage",id="frontpageimage")
-						i(id="jumbotext") Follow the clues around Boston to the grand prize
-		div(id="hunt-join")
-			form(id="form",action="/hunterjoin",method="post",onsubmit="return formvalidation()")
-				input(type="text",id="HunterEmail",name="HunterEmail",style="color:#888;", value="Enter your email", onfocus="inputFocus(this)",onblur="inputBlur(this)")
-				p(id="errormessageholder")
-				div(id="submitbuttonholder")
-					button(type="submit",action="post",id="frontpagesubmitbutton",class="submitbutton") I want to participate
-			
-					
+		div(id="red-background")
