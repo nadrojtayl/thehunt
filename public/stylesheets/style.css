@@ -296,3 +296,8 @@ li{
 	position: relative;
 	left: 40%;
 }
+
+
+ul,li{
+	font-size: 20px;
+}

@@ -21,5 +21,10 @@ function formvalidation(){
 }
 
 function confirmemail(email){
-	return document.getElementById("email").value === email
+	if (document.getElementById("email").value === email){
+		return true
+	}
+	error = document.createTextNode("That email doesn't match the one you entered earlier. If you entered it incorrectly on the homepage, please go back to the homepage and re-enter it")
+	document.getElementById("errormessageonjoin").appendChild(error)
+	return false;
 }
