@@ -272,7 +272,8 @@ li{
 }
 
 #smallheadingtext{
-	font-size: 1.6em;
+	font-size: 23px;
+	-webkit-text-size-adjust: none;
 }
 
 #explanatorytext{
