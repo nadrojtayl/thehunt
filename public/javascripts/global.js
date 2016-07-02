@@ -8,7 +8,7 @@ function inputBlur(i){
 onclick="formvalidation('myform');return false;"
 
 function formvalidation(){
-	console.log(document.getElementById("HunterEmail").value.indexOf("@") === -1);
+	console.log(document.getElementById("").value.indexOf("@") === -1);
 	if (document.getElementById("HunterEmail").value.indexOf("@") === -1){
 		console.log("Not valid");
 		var notvalidemailnotification = document.createTextNode("Not a valid email address. Please re-enter.");
@@ -28,3 +28,22 @@ function confirmemail(email){
 	document.getElementById("errormessageonjoin").appendChild(error)
 	return false;
 }
+
+Element.prototype.remove = function() {
+    this.parentElement.removeChild(this);
+}
+NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+    for(var i = this.length - 1; i >= 0; i--) {
+        if(this[i] && this[i].parentElement) {
+            this[i].parentElement.removeChild(this[i]);
+        }
+    }
+}
+
+//changes page for mobile
+
+	if (screen.width>700){
+		document.getElementById("HunterEmail").appendChild();
+	}
+
+mobile();
