@@ -21,13 +21,13 @@ html
 					ul
 						li Hunters will hunt in the greater Boston area, centered in Cambridge
 						li Hunt will begin at 3 PM on Hunt Date
-						li You wil receive a text message with the first clue. Decoding the first clue will take you to a second clue... and so on. 
+						li You wil receive a text message with the first clue. Decoding the first clue will take you to the second clue.
 						li There are 8 clues in total.
-						li ...First team to the last clue gets $100 and a billboard
+						li ...First team to the last clue gets $100 and their names on a billboard
 						li Here's a first clue to start thinking about...What's the ship that never sinks?
 			div(id="joinform",class="col-md-4 col-lg-3")
-				p Okay your email is #{email} 
-				p Confirm your email and your phone number to become a Hunter. We'll email you a paypal link for $2 if there are enough Hunters
+				p Okay your email is #{email}  
+				p Confirm your email and your phone number to become a Hunter. We'll text you the first clue on July 16th if there are enough Hunters.
 				form(class="form",id="addhunterpagejoinform",action="/adduser",method="post",onsubmit="return confirmemail('#{email}')")
 					div(id="form-group")
 						label(id="namelabel",for="nameinputform") Hunter Name
