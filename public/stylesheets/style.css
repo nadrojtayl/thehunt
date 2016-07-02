@@ -97,6 +97,7 @@ li{
 	padding-bottom: 0%;
 	padding-top: 1%;
 	margin-bottom:0%;
+	color: black;
 	background: #76e2a3;
 
 }
@@ -196,6 +197,7 @@ li{
 	display: inline-block;
   vertical-align: middle;
   line-height: normal;     
+  color:black;
 }
 
 #vcenter{
@@ -243,7 +245,7 @@ li{
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
 	width:101%;
-	height:38%;
+	height:45%;
 	text-align:center;
 	 margin: 0 auto;
 	 position:relative;
@@ -266,11 +268,11 @@ li{
 }
 
 #frontheading{
-	font-size: 2.8em !important;
+	font-size: 3.4em !important;
 }
 
 #smallheadingtext{
-	font-size: 1.4em;
+	font-size: 1.6em;
 }
 
 #explanatorytext{
@@ -281,11 +283,11 @@ li{
 }
 
 .greentext{
-	color:green;
+	color:black;
 }
 
 #jumbotext{
-	color:green;
+	color:black;
 }
 
 #frontpagecountdowntext{
