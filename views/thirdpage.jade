@@ -1,0 +1,50 @@
+doctype html
+html
+	head
+		title= "The Hunt- Hunter Join"
+		link(rel='stylesheet', href='/stylesheets/test.css')
+		link(rel="icon", href="/images/logo.png")
+		link(rel='stylesheet',href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+		script(src="https://code.jquery.com/jquery-1.1p.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+	body
+		header(id="topbanner")
+			img(src = "/images/logo.png", id="logo")
+			div(id="titletext",class="inline")
+				p Boston Summer Scavenger Hunt
+				p Puzzle lovers compete to win money in Boston
+		div(id="socialbanner",class="clearBoth")
+			img(id="hunters", src = "")
+			aside(class="inline column")
+				p This is the best - Sam
+			aside(class="inline column")
+				p I loved it - Ben
+			aside(class="inline column")
+				p I hated it - Mike
+		div(id="descriptionandcalltoaction" class="clearBoth")
+			div(id="description-square",class="columnhalfpagewidth inline")
+				h2 We've hidden $100 somewhere in Boston
+				section(id="huntexplanation")
+					h3 The great game
+					ul
+						li We've hidden 8 clues scattered around Boston
+						li All are in the Cambridge/Downtown Boston area
+						li Spend a fun afternoon hunting (for money) with your friends
+						li When you reach the last clue, contact us with the code you found and we'll give you $100
+						li Only valid for a week: the hunt is over on July 16th
+					div(id="currenthuntstatus")
+						div(id="yourclueprogress" class = "inline column dashboard")
+							p Number
+						div(id="furthestahunteris" class = "inline column dashboard ")
+							p Your progress
+			div(id="clue", class="columnhalfpagewidth inline")
+				h3 Sign up to get the first clue
+				div(id="clues")
+				form(action="/hunterjoin" id="hunterjoinform" method = "post" onsubmit ="return formvalidation()")
+					label(for="Emailinput" required) Email 
+					input(type="text" name= "email" id = "Emailinput")
+					input(class="btn" type="submit" name="submit" value="Submit")
+						
+				p The Hunt will never sell your email or information to anyone
+					
+		

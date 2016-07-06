@@ -1,0 +1,38 @@
+body{
+	font-size:24px;
+}
+
+#logo{
+	display:inline;
+	width:10%;
+	float:left;
+}
+
+#title{
+	display:inline;
+}
+
+div.inline, aside.inline { float:left; }
+
+.clearBoth { clear:both; }
+
+p{
+	vertical-align:middle;
+}
+
+.column.inline{
+	margin: 0 1.5%;
+  width: 30%;
+}
+
+.columnhalfpagewidth.inline{
+	width: 50%;
+}
+
+#topbanner{
+	background-color:grey;
+}
+
+.dashboard{
+	border:  2px solid black;
+}

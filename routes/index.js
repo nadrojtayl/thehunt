@@ -7,9 +7,14 @@ router.get('/', function(req, res, next) {
   res.render('testfrontpage', { date: 'July 16th' });
 });
 
+router.get('/testpage', function(req, res, next) {
+  res.render('thirdpage', {});
+});
+
 router.get('/faq', function(req, res, next) {
   res.render('faq', { title: 'Express' });
 });
+
 
 router.post('/hunterjoin',function(req,res,next){
 	//renders page hunterjoin with email user sent
